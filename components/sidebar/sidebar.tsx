@@ -24,7 +24,7 @@ export function Sidebar() {
       initial={{ x: -20, opacity: 0 }}
       animate={{ x: 0, opacity: 1 }}
       transition={{ duration: 0.4, ease: "easeOut" }}
-      className="w-[200px] border-r flex-shrink-0 flex flex-col bg-background transition-colors duration-500 hidden md:flex"
+      className="w-[200px] border-r flex-shrink-0 flex flex-col bg-background transition-colors duration-500 md:flex"
     >
       <div className="flex-1 py-4">
         <div className="px-4 space-y-2">

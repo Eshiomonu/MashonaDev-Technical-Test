@@ -10,7 +10,7 @@ interface DashboardLayoutProps {
   children: ReactNode
 }
 
-export function Layout({ children }: DashboardLayoutProps) {
+export function DashboardLayout({ children }: DashboardLayoutProps) {
   const isMobile = useIsMobile()
 
   return (
