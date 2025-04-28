@@ -4,7 +4,7 @@ import { useEffect, useState } from "react"
 
 import { HeroBanner } from "@/components/banner/banner"
 import { DashboardLayout } from "@/components/dashboard-layout/dashboardLayout"
-// import { OverviewSection } from "@/components/dashboard/overview-section"
+import { DashboardView } from "@/components/dashboard-body/dashboard"
 // import { RecentShipmentsSection } from "@/components/dashboard/recent-shipments-section"
 
 export default function Dashboard() {
@@ -22,6 +22,7 @@ export default function Dashboard() {
   return (
    <DashboardLayout>
     <HeroBanner/>
+    <DashboardView/>
    </DashboardLayout>
   )
 }
