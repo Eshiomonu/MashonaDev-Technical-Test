@@ -26,8 +26,19 @@ export function Sidebar() {
       transition={{ duration: 0.4, ease: "easeOut" }}
       className="w-[240px] h-[1213px] right-1 bg-white border-[#e5e5e5] border-r-1 flex-shrink-0 flex flex-col transition-colors duration-500 md:flex"
     >
+      <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.2 }}
+            className="w-[240px] h-[96px] bottom-1 "
+          >
+            <h2 className="text-xl font-bold text-foreground transition-colors duration-500">Invite & Earn</h2>
+            <p className="text-sm text-muted-foreground mt-1 transition-colors duration-500">
+              Keep track of your addresses, location updates. Edit, Delete, Update and see all your saved addresses
+            </p>
+          </motion.div>
 
-        <div className=" w-[180px] h-[504] ml-[30px] mt-[134px] gap-8">
+        <div className=" w-[180px] h-[504px] ml-[30px] mt-[134px] gap-8">
 
           {navItems.map((item) => (
             <SidebarNavItem
@@ -47,6 +58,9 @@ export function Sidebar() {
         transition={{ delay: 0.6 }}
         className="p-4 border-t"
       >
+        
+
+        <motion.div whileHover={{ x: 5 }} transition={{ type: "spring", stiffness: 400 }} className="w-[180px] h-[144px] ml-[30px] mt-[1037px] gap-8">
         <div className="flex items-center justify-between mb-4">
           <div className="flex items-center gap-3">
             <Avatar className="h-10 w-10">
@@ -60,11 +74,9 @@ export function Sidebar() {
           </div>
           <ThemeToggle />
         </div>
-
-        <motion.div whileHover={{ x: 5 }} transition={{ type: "spring", stiffness: 400 }}>
           <Button
             variant="ghost"
-            className="w-full justify-start gap-3 transition-all duration-200 hover:bg-accent hover:text-accent-foreground"
+            className=" justify-start transition-all duration-200 hover:bg-accent text-secondary"
           >
             <LogOut size={18} />
             <span>Logout</span>

@@ -13,17 +13,17 @@ interface SidebarNavItemProps {
 
 export function SidebarNavItem({ icon: Icon, label, href, active = false }: SidebarNavItemProps) {
   return (
-    <motion.div whileHover={{ x: 5 }} transition={{ type: "spring", stiffness: 400 }} className="top-[134px]">
+    <motion.div whileHover={{ x: 5 }} transition={{ type: "spring", stiffness: 400 }} >
       <Button
         variant="ghost"
-        className={`w-[180px] h-[56px] justify-start gap-8 p-16 font-medium transition-all duration-200 hover:bg-accent hover:text-accent-foreground ${
-          active ? "bg:btnActive text-accent-foreground" : ""
+        className={`w-[180px] h-[36px] text-secondary justify-start gap-4 p-8 transition-all duration-200 ${
+          active ? "bg-btnActive text-primary" : ""
         }`}
         asChild
       >
         <a href={href}>
-          <Icon size={18} />
-          <span>{label}</span>
+          <Icon  size={24} />
+          <span className="font-semibold text-[16px] ">{label}</span>
         </a>
       </Button>
     </motion.div>
