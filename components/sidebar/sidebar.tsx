@@ -27,14 +27,11 @@ export function Sidebar() {
       transition={{ duration: 0.4, ease: "easeOut" }}
       className="w-[240px] h-[1213px] right-1 bg-white border-[#e5e5e5] border-r-1 flex-shrink-0 flex flex-col transition-colors duration-500 md:flex"
     >
-      <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.2 }}
-            className="w-[240px] h-[96px] bottom-1 p-[24px] gap-8 border border-[#E5E5E5]"
+      <div
+            className="w-[240px] bottom-1 p-[24px] gap-8 border border-[#E5E5E5]"
           >
-           <Image src={""} alt="logo" className="text-secondary"/>
-          </motion.div>
+           <Image src={""} alt="logo" className="text-secondary" height={96}/>
+          </div>
 
         <div className=" w-[180px] h-[504px] ml-[30px] mt-[134px] gap-8">
 

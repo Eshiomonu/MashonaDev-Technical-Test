@@ -8,30 +8,17 @@ export function HeroBanner() {
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
-      className=""
+      className="relative bg-slate-900 dark:bg-slate-800 text-white p-6 md:p-10 h-[150px] md:h-[180px] flex items-center overflow-hidden transition-colors duration-500"
     >
-      <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.2 }}
-            className="pt-4 pb-8"
-          >
-            <h2 className="text-xl font-bold text-foreground transition-colors duration-500">Invite & Earn</h2>
-            <p className="text-sm text-muted-foreground mt-1 transition-colors duration-500">
-              Keep track of your addresses, location updates. Edit, Delete, Update and see all your saved addresses
-            </p>
-          </motion.div>
       <motion.div
         initial={{ x: -50, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ delay: 0.3, duration: 0.5 }}
-        className="relative bg-slate-900 dark:bg-slate-800 text-white p-6 md:p-10 h-[150px] md:h-[180px]  overflow-hidden transition-colors duration-500flex items-center"
       >
-        <div>
         <h1 className="text-xl md:text-3xl font-bold">KEEP UP WITH YOUR</h1>
         <h1 className="text-xl md:text-3xl font-bold">BUSINESS NEEDS</h1>
-        </div>
-        <motion.div
+      </motion.div>
+      <motion.div
         initial={{ scale: 0.8, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ delay: 0.5, duration: 0.5, type: "spring" }}
@@ -43,9 +30,6 @@ export function HeroBanner() {
           className="h-[80px] md:h-[120px]"
         />
       </motion.div>
-       
-      </motion.div>
-     
 
       {/* Pagination dots */}
       <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-1">
