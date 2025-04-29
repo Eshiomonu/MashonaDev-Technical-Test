@@ -6,6 +6,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Button } from "@/components/ui/button"
 import { ThemeToggle } from "@/components/theme-toggle"
 import { SidebarNavItem } from "@/components/sidebar/sidebar-items"
+import Image from "next/image"
 
 export function Sidebar() {
   const navItems = [
@@ -30,12 +31,9 @@ export function Sidebar() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.2 }}
-            className="w-[240px] h-[96px] bottom-1 "
+            className="w-[240px] h-[96px] bottom-1 p-[24px] gap-8 border border-[#E5E5E5]"
           >
-            <h2 className="text-xl font-bold text-foreground transition-colors duration-500">Invite & Earn</h2>
-            <p className="text-sm text-muted-foreground mt-1 transition-colors duration-500">
-              Keep track of your addresses, location updates. Edit, Delete, Update and see all your saved addresses
-            </p>
+           <Image src={""} alt="logo" className="text-secondary"/>
           </motion.div>
 
         <div className=" w-[180px] h-[504px] ml-[30px] mt-[134px] gap-8">
