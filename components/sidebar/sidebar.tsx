@@ -24,21 +24,10 @@ export function Sidebar() {
       initial={{ x: -20, opacity: 0 }}
       animate={{ x: 0, opacity: 1 }}
       transition={{ duration: 0.4, ease: "easeOut" }}
-      className="w-[200px] border-r flex-shrink-0 flex flex-col bg-background transition-colors duration-500 md:flex"
+      className="w-[240px] h-[1213px] right-1 bg-white border-[#e5e5e5] border-r-1 flex-shrink-0 flex flex-col transition-colors duration-500 md:flex"
     >
-      <div className="flex-1 py-4">
-        <div className="px-4 space-y-2">
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.2 }}
-            className="pt-4 pb-8"
-          >
-            <h2 className="text-xl font-bold text-foreground transition-colors duration-500">Invite & Earn</h2>
-            <p className="text-sm text-muted-foreground mt-1 transition-colors duration-500">
-              Keep track of your addresses, location updates. Edit, Delete, Update and see all your saved addresses
-            </p>
-          </motion.div>
+
+        <div className=" w-[180px] h-[504] ml-[30px] mt-[134px] gap-8">
 
           {navItems.map((item) => (
             <SidebarNavItem
@@ -50,7 +39,7 @@ export function Sidebar() {
             />
           ))}
         </div>
-      </div>
+     
 
       <motion.div
         initial={{ opacity: 0 }}
