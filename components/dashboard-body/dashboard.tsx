@@ -36,30 +36,30 @@ export function DashboardView() {
   }
 
   return (
-    <motion.div variants={containerVariants} initial="hidden" animate="visible" className="w-[1200px] h-[221px] gap-6 left-8 md:p-6">
+    <motion.div variants={containerVariants} initial="hidden" animate="visible" className="w-[1200px] h-[221px] gap-6 left-8 mt-6 md:p-6">
       <motion.div variants={itemVariants} className="  flex justify-between items-center mb-6">
-        <h2 className="text-xl font-medium text-foreground transition-colors duration-500">Overview</h2>
+        <h2 className="text-2xl font-medium font-[#171717] left-8 transition-colors duration-500">Overview</h2>
         <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-          <Button variant="outline" className="gap-1 transition-colors duration-300 text-sm md:text-base">
+          <Button variant="outline" className="font-[#737373] transition-colors duration-300 text-sm md:text-base">
             This Month <ChevronDown size={16} />
           </Button>
         </motion.div>
       </motion.div>
 
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-6">
+      <div className="flex justify-between">
         {/* Balance Card */}
         <motion.div variants={itemVariants} className="col-span-2 md:col-span-1">
           <BalanceCard balance="₦3,000,000.28" />
         </motion.div>
 
-        {/* Total Shipment */}
+        <div className="flex justify-center flex-row items-center gap-3">
+           {/* Total Shipment */}
         <motion.div variants={itemVariants}>
           <StatCard
             title="Total Shipment"
             value="34"
             icon={Package}
             change={{ value: "90%", positive: true }}
-            iconColor="text-amber-500 dark:text-amber-400"
             iconAnimation="rotate"
           />
         </motion.div>
@@ -87,6 +87,8 @@ export function DashboardView() {
             iconAnimation="moveDown"
           />
         </motion.div>
+        </div>
+       
       </div>
     </motion.div>
   )

@@ -10,7 +10,7 @@ interface BalanceCardProps {
 
 export function BalanceCard({ balance }: BalanceCardProps) {
   return (
-    <Card className="bg-indigo-600 dark:bg-indigo-700 text-white transition-all duration-300 h-full">
+    <Card className="w-[448px] h-[163px] border rounded-lg bg-balanceCrad text-white transition-all duration-300">
       <CardContent className="p-4 md:p-6">
         <p className="text-sm mb-1">Your Balance</p>
         <motion.h3

@@ -15,6 +15,7 @@ module.exports = {
         banner: "#262A48",
         primary: "#EBFFE2", // Custom theme color
         secondary: "#525252",
+        balanceCrad: "#5A65AB",
       },
       backgroundImage: {
         "hero-pattern": "url('/blend.png')",

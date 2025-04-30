@@ -31,20 +31,20 @@ export function StatCard({ title, value, icon: Icon, change, iconColor, iconAnim
   }
 
   return (
-    <Card className="transition-all duration-300 bg-card text-card-foreground h-full">
-      <CardContent className="p-4 md:p-6">
-        <div className="flex items-center gap-2 mb-2">
+    <Card className="transition-all duration-300 w-[212px] h-[163px] gap-2 bg-white rounded-lg">
+      <CardContent className="w-[181px] h-[97px] p-4 md:p-6">
+        <div className="w-[181px] h-[40px] flex items-center gap-2 mb-2">
           <motion.div animate={getIconAnimation()} transition={{ delay: 0.5, duration: 1, repeat: 0 }}>
-            <Icon className={iconColor || "text-primary"} size={18} />
+            <Icon size={20} />
           </motion.div>
-          <span className="text-xs md:text-sm">{title}</span>
+          <span className="text-xs font-normal font-[#525252] md:text-sm">{title}</span>
         </div>
         <div className="flex items-center justify-between">
           <motion.h3
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.3, duration: 0.5 }}
-            className="text-xl md:text-2xl font-bold"
+            className="text-xl font-[#353535] md:text-2xl font-medium"
           >
             {value}
           </motion.h3>
@@ -53,7 +53,7 @@ export function StatCard({ title, value, icon: Icon, change, iconColor, iconAnim
             animate={{ scale: 1 }}
             transition={{ delay: 0.5, type: "spring" }}
             className={`flex items-center ${
-              change.positive ? "text-green-500 dark:text-green-400" : "text-red-500 dark:text-red-400"
+              change.positive ? "text-[#0A7D00]" : "text-[#D7FDFF]"
             } text-xs md:text-sm`}
           >
             {change.positive ? <ArrowUp size={14} /> : <ArrowDown size={14} />}
