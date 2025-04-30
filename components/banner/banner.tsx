@@ -23,13 +23,13 @@ export function HeroBanner() {
         initial={{ scale: 0.8, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ delay: 0.5, duration: 0.5, type: "spring" }}
-        className="absolute right-4 md:right-10 top-1/2 -translate-y-1/2"
+        className="absolute right-6 md:right-10 top-[-8px] -translate-y-1/2"
       >
         <img
           src="/boxes.png"
           alt="Shipping boxes and globe"
-          width={120}
-          height={80}
+          width={234.25}
+          height={234.25}
           className=""
         />
       </motion.div>

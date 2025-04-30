@@ -36,8 +36,8 @@ export function DashboardView() {
   }
 
   return (
-    <motion.div variants={containerVariants} initial="hidden" animate="visible" className="p-4 md:p-6">
-      <motion.div variants={itemVariants} className="flex justify-between items-center mb-6">
+    <motion.div variants={containerVariants} initial="hidden" animate="visible" className="w-[1200px] h-[221px] gap-6 left-8 md:p-6">
+      <motion.div variants={itemVariants} className="  flex justify-between items-center mb-6">
         <h2 className="text-xl font-medium text-foreground transition-colors duration-500">Overview</h2>
         <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
           <Button variant="outline" className="gap-1 transition-colors duration-300 text-sm md:text-base">
