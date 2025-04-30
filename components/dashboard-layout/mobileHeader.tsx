@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
-import { ThemeToggle } from "@/components/theme-toggle"
+
 
 export function MobileHeader() {
   return (
@@ -19,7 +19,6 @@ export function MobileHeader() {
         </Avatar>
         <h1 className="font-bold">Shipping Dashboard</h1>
       </div>
-      <ThemeToggle />
     </motion.div>
   )
 }

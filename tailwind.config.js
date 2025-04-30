@@ -12,6 +12,7 @@ module.exports = {
     extend: {
       colors: {
         btnActive: "#262A48",
+        banner: "#262A48",
         background: "var(--background)",
         foreground: "var(--foreground)",
         primary: "#EBFFE2", // Custom theme color

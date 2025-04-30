@@ -4,7 +4,6 @@ import { motion, AnimatePresence } from "framer-motion"
 import { Home, Package, CreditCard, Bell, Menu, X } from "lucide-react"
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
-import { ThemeToggle } from "@/components/theme-toggle"
 
 export function MobileNav() {
   const [isOpen, setIsOpen] = useState(false)
@@ -73,7 +72,6 @@ export function MobileNav() {
               <div className="space-y-6">
                 <div className="flex items-center justify-between">
                   <h3 className="font-medium">Theme</h3>
-                  <ThemeToggle />
                 </div>
 
                 <div className="space-y-2">

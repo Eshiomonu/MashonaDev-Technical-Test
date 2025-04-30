@@ -4,7 +4,6 @@ import { motion } from "framer-motion"
 import { LayoutDashboard, Package, Globe, Bell, CreditCard, MapPin, Share2, HelpCircle, LogOut } from "lucide-react"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Button } from "@/components/ui/button"
-import { ThemeToggle } from "@/components/theme-toggle"
 import { SidebarNavItem } from "@/components/sidebar/sidebar-items"
 import Image from "next/image"
 
@@ -25,15 +24,15 @@ export function Sidebar() {
       initial={{ x: -20, opacity: 0 }}
       animate={{ x: 0, opacity: 1 }}
       transition={{ duration: 0.4, ease: "easeOut" }}
-      className="w-[240px] h-[1213px] right-1 bg-white border-[#e5e5e5] border-r-1 flex-shrink-0 flex flex-col transition-colors duration-500 md:flex"
+      className="w-[240px] right-1 bg-white border border-[#E5E5E5] flex-shrink-0 flex flex-col transition-colors duration-500 md:flex"
     >
       <div
-            className="w-[240px] bottom-1 p-[24px] gap-8 border border-[#E5E5E5]"
+            className="w-[240px] h-[96px] bottom-1 p-[24px] gap-8 border border-[#E5E5E5]"
           >
-           <Image src={""} alt="logo" className="text-secondary" height={96}/>
+           <Image src={""} alt="logo" height={96}/>
           </div>
 
-        <div className=" w-[180px] h-[504px] ml-[30px] mt-[134px] gap-8">
+        <div className=" w-[180px] h-[504px] ml-[30px] mt-[54px] gap-8">
 
           {navItems.map((item) => (
             <SidebarNavItem
@@ -55,7 +54,7 @@ export function Sidebar() {
       >
         
 
-        <motion.div whileHover={{ x: 5 }} transition={{ type: "spring", stiffness: 400 }} className="w-[180px] h-[144px] ml-[30px] mt-[1037px] gap-8">
+        <motion.div whileHover={{ x: 5 }} transition={{ type: "spring", stiffness: 400 }} className="w-[180px] h-[144px] ml-[30px] mt-[37px] gap-8">
         <div className="flex items-center justify-between mb-4">
           <div className="flex items-center gap-3">
             <Avatar className="h-10 w-10">
@@ -67,7 +66,7 @@ export function Sidebar() {
               <p className="text-muted-foreground transition-colors duration-500">Lastname</p>
             </div>
           </div>
-          <ThemeToggle />
+         
         </div>
           <Button
             variant="ghost"
