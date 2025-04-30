@@ -8,7 +8,7 @@ export function HeroBanner() {
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
-      className="w-[1240px] m-[15px] ml-[20px] rounded-md bg-banner relative text-white p-10 md:p-10  md:h-[180px] flex items-center overflow-hidden transition-colors duration-500"
+      className="w-[1200px] h-[245px] top-7 left-8 rounded-md bg-banner mix-blend-overlay[url('/blend.png')] relative text-white p-10 md:p-10  md:h-[180px] flex items-center overflow-hidden transition-colors duration-500"
     >
       <motion.div
         initial={{ x: -50, opacity: 0 }}
@@ -16,8 +16,8 @@ export function HeroBanner() {
         transition={{ delay: 0.3, duration: 0.5 }}
         className="pt-11"
       >
-        <h1 className="text-xl md:text-3xl font-bold">KEEP UP WITH YOUR</h1>
-        <h1 className="text-xl md:text-3xl font-bold">BUSINESS NEEDS</h1>
+        <h1 className="w-[380.21px] h-[74px] top-12] left-5 text-[42.47px] font-black tracking-[-2%] md:text-3xl text-white uppercase">KEEP UP with your business needs</h1>
+        
       </motion.div>
       <motion.div
         initial={{ scale: 0.8, opacity: 0 }}
@@ -26,9 +26,11 @@ export function HeroBanner() {
         className="absolute right-4 md:right-10 top-1/2 -translate-y-1/2"
       >
         <img
-          src="/placeholder.svg?height=120&width=200"
+          src="/boxes.png"
           alt="Shipping boxes and globe"
-          className="h-[80px] md:h-[120px]"
+          width={120}
+          height={80}
+          className=""
         />
       </motion.div>
 
